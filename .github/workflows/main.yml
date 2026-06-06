@@ -10,13 +10,11 @@ jobs:
     name: Build for Android 📱
     runs-on: ubuntu-latest
     steps:
-      # Checkout
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           lfs: true
 
-      # Cache
       - uses: actions/cache@v4
         with:
           path: Library
@@ -24,15 +22,20 @@ jobs:
           restore-keys: |
             Library-
 
-      # Build
-      - name: Build project
-        uses: game-ci/unity-builder@v4
+      # Tentar ativar a licença na hora
+      - name: Activate Unity License
+        uses: game-ci/unity-license-activate@v2
+        id: activate
         env:
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+
+      - name: Build project
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ steps.activate.outputs.unityLicense }}
         with:
           targetPlatform: Android
           unityVersion: 6000.0.23f1
           androidAppBundle: false
           androidExportType: 'androidPackage'
-          # Removendo o check de licença manual para tentar a automática do GameCI
