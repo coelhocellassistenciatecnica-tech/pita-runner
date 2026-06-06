@@ -34,10 +34,5 @@ jobs:
           targetPlatform: Android
           unityVersion: 6000.0.23f1
           androidAppBundle: false
-          androidExportType: 'androidPackage' # Corrigido: 'androidPackage' gera o APK
-
-      # Output
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Build-Android
-          path: build/Android
+          androidExportType: 'androidPackage'
+          # Removendo o check de licença manual para tentar a automática do GameCI
