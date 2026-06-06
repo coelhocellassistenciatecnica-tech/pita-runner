@@ -11,6 +11,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Request activation file
         run: |
+          # Criar o arquivo de ativação e garantir que ele esteja no diretório atual
           docker run --rm \
             -v "$(pwd):/project" \
             unityci/editor:ubuntu-2022.3.20f1-base-3 \
@@ -20,10 +21,14 @@ jobs:
               -createManualActivationFile \
               -logfile /dev/stdout \
               -quit
+          
+          # Mover de dentro do projeto para a raiz se necessário
+          find . -name "*.alf" -exec mv {} . \;
+          
       - name: Rename and Upload
         run: |
-          mv *.alf Unity_v6000.0.23f1.alf || true
+          ls -R
       - uses: actions/upload-artifact@v4
         with:
           name: activation-file
-          path: ./*.alf
+          path: "**/*.alf"
