@@ -22,18 +22,21 @@ jobs:
           restore-keys: |
             Library-
 
-      # Tentar ativar a licença na hora
-      - name: Activate Unity License
-        uses: game-ci/unity-license-activate@main
-        id: activate
-        env:
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+      - name: Generate Activation File
+        uses: game-ci/unity-request-activation-file@v2
+        id: get-alf
 
-      - name: Build project
+      - name: Upload ALF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: UnityActivationFile
+          path: ${{ steps.get-alf.outputs.filePath }}
+
+      - name: Build project (Skip if no license)
+        if: env.UNITY_LICENSE != ''
         uses: game-ci/unity-builder@v4
         env:
-          UNITY_LICENSE: ${{ steps.activate.outputs.unityLicense }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: Android
           unityVersion: 6000.0.23f1
