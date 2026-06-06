@@ -26,13 +26,14 @@ jobs:
           path: ${{ steps.get-alf.outputs.filePath }}
 
       - name: Build project
-        if: secrets.UNITY_LICENSE != ''
         uses: game-ci/unity-builder@v4
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: Android
           unityVersion: 6000.0.23f1
           androidExportType: 'androidPackage'
+          # Nota: Se UNITY_LICENSE estiver vazio, o builder tentará usar UNITY_EMAIL e UNITY_PASSWORD para ativação Personal.
+
