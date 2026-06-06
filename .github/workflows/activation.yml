@@ -11,23 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Request activation file
         run: |
+          # Rodar o Unity para gerar o arquivo de ativação
           docker run --rm \
             -v "$(pwd):/project" \
             unityci/editor:ubuntu-2022.3.20f1-base-3 \
-            unity-editor \
-              -batchmode \
-              -nographics \
-              -createManualActivationFile \
-              -logfile /dev/stdout \
-              -quit || true
+            bash -c "unity-editor -batchmode -nographics -createManualActivationFile -logfile /dev/stdout -quit || true; find / -name '*.alf' 2>/dev/null | xargs -I {} cp {} /project/Unity.alf"
           
-          echo "Listing all files to find .alf:"
-          find . -name "*.alf"
-          
-          # Tentar mover qualquer .alf encontrado para a raiz com nome fixo
-          find . -name "*.alf" -exec mv {} ./Unity.alf \;
+          echo "Checking if Unity.alf exists in current directory:"
+          ls -l Unity.alf || echo "Unity.alf NOT FOUND"
           
       - uses: actions/upload-artifact@v4
         with:
           name: activation-file
           path: Unity.alf
+          if-no-files-found: error
