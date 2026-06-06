@@ -22,7 +22,18 @@ jobs:
           restore-keys: |
             Library-
 
+      - name: Generate Activation File
+        uses: game-ci/unity-request-activation-file@v2
+        id: get-alf
+
+      - name: Upload ALF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: UnityActivationFile
+          path: ${{ steps.get-alf.outputs.filePath }}
+
       - name: Build project
+        if: env.UNITY_LICENSE != ''
         uses: game-ci/unity-builder@v4
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -31,6 +42,6 @@ jobs:
         with:
           targetPlatform: Android
           unityVersion: 6000.0.23f1
-
+          androidAppBundle: false
           androidExportType: 'androidPackage'
           androidAppBundle: false # Removido para evitar warning, mas mantido para referência se necessário.
