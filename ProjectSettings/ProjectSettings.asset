@@ -1,0 +1,400 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 23
+  productGUID: a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6
+  AndroidProfiler: 0
+  AndroidFilterTouchesWhenObscured: 0
+  AndroidEnableSustainedPerformanceMode: 0
+  defaultScreenOrientation: 3
+  targetDevice: 0
+  useOnDemandResources: 0
+  accelerometerFrequency: 60
+  companyName: PitaGames
+  productName: Pita Runner
+  defaultCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
+  m_SplashScreenBackgroundColor: {r: 0.13333334, g: 0.09411765, b: 0.23137255, a: 1}
+  m_ShowUnitySplashScreen: 0
+  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_HolographicTrackingLossScreen: {fileID: 0}
+  defaultScreenWidth: 1080
+  defaultScreenHeight: 1920
+  defaultScreenWidthWeb: 960
+  defaultScreenHeightWeb: 600
+  m_StereoRenderingPath: 0
+  m_ActiveColorSpace: 1
+  m_MTRendering: 1
+  mipStripping: 0
+  numberOfMipsStripped: 0
+  stackTraceTypes: 010000000100000001000000010000000100000001000000
+  iosShowActivityIndicatorOnLoading: -1
+  allowedAutorotateToPortrait: 1
+  allowedAutorotateToPortraitUpsideDown: 0
+  allowedAutorotateToLandscapeRight: 0
+  allowedAutorotateToLandscapeLeft: 0
+  useOSAutorotation: 1
+  use32BitDisplayBuffer: 1
+  preserveFramebufferAlpha: 0
+  disableDepthAndStencilBuffers: 0
+  androidStartInFullscreen: 1
+  androidRenderOutsideSafeArea: 1
+  androidUseSwappy: 1
+  androidBlitType: 0
+  androidResizableWindow: 0
+  androidDefaultWindowWidth: 1920
+  androidDefaultWindowHeight: 1080
+  androidMinimumWindowWidth: 400
+  androidMinimumWindowHeight: 300
+  androidFullscreenMode: 1
+  defaultIsNativeResolution: 1
+  macRetinaSupport: 1
+  runInBackground: 0
+  captureSingleScreen: 0
+  muteOtherAudioSources: 0
+  Prepare IOS For Recording: 0
+  Force IOS Speakers When Recording: 0
+  deferSystemGesturesMode: 0
+  hideHomeButton: 0
+  submitAnalytics: 0
+  usePlayerLog: 1
+  bakeCollisionMeshes: 0
+  forceSingleInstance: 0
+  useFlipModelSwapchain: 1
+  resizableWindow: 0
+  useMacAppStoreValidation: 0
+  macAppStoreCategory: public.app-category.games
+  gpuSkinning: 1
+  xboxPIXTextureCapture: 0
+  xboxEnableAvatar: 0
+  xboxEnableKinect: 0
+  xboxEnableKinectAutoTracking: 0
+  xboxEnableFitness: 0
+  visibleInBackground: 1
+  allowFullscreenSwitch: 1
+  fullscreenMode: 0
+  xboxSpeechDB: 0
+  xboxEnableHeadOrientation: 0
+  xboxEnableGuest: 0
+  xboxEnablePIXSampling: 0
+  metalFramebufferOnly: 0
+  xboxOneResolution: 0
+  xboxOneSResolution: 0
+  xboxOneXResolution: 3
+  xboxOneMonoLoggingLevel: 0
+  xboxOneLoggingLevel: 1
+  xboxOneDisableEsram: 0
+  xboxOnePresentImmediateThreshold: 0
+  switchQueueCommandMemory: 0
+  switchQueueControlMemory: 16384
+  switchQueueComputeMemory: 262144
+  switchNVNShaderPoolsGranularity: 33554432
+  switchNVNDefaultPoolsGranularity: 16777216
+  switchNVNOtherPoolsGranularity: 16777216
+  switchNVNMaxPublicTextureIDCount: 0
+  switchNVNMaxPublicSamplerIDCount: 0
+  stadiaPresentMode: 0
+  stadiaTargetFramerate: 0
+  vulkanNumSwapchainBuffers: 3
+  vulkanEnableSetSRGBWrite: 0
+  vulkanEnablePreTransform: 0
+  vulkanEnableLateAcquireNextImage: 0
+  vulkanEnableCommandBufferRecycling: 1
+  m_SupportedAspectRatios:
+    Port Portrait: 1
+    Port PortraitUpsideDown: 0
+    Port LandscapeLeft: 0
+    Port LandscapeRight: 0
+    Port AutoRotation: 0
+  bundleVersion: 1.0.0
+  preloadedAssets: []
+  metroInputSource: 0
+  wsaTransparentSwapchain: 0
+  m_HolographicPauseOnTrackingLoss: 1
+  xboxOneDisableKinectGpuReservation: 1
+  xboxOneEnable7thCore: 1
+  vrSettings:
+    cardboard:
+      depthFormat: 0
+      enableTransitionView: 0
+    daydream:
+      depthFormat: 0
+      useSustainedPerformanceMode: 0
+      enableVideoLayer: 0
+      useAsyncReprojection: 0
+      mirrorMode: 0
+    hololens:
+      depthFormat: 1
+      depthBufferSharingEnabled: 1
+    lumin:
+      depthFormat: 0
+      frameTiming: 2
+      groundPlane: 1
+    oculus:
+      sharedDepthBuffer: 1
+      dashSupport: 1
+      lowOverheadMode: 0
+      optimizeBufferDiscards: 1
+      phoneHorizontalHalfView: 0
+      v2Signing: 1
+  applicationIdentifier:
+    Android: com.pitagames.pitarunner
+    iPhone: com.pitagames.pitarunner
+    Standalone: com.pitagames.pitarunner
+  buildNumber:
+    iPhone: 0
+    tvOS: 0
+  AndroidBundleVersionCode: 1
+  AndroidMinSdkVersion: 24
+  AndroidTargetSdkVersion: 35
+  AndroidMaxAspectRatio: 2.1
+  applicationPath:
+  androidSupportedAspectRatio: 1
+  m_BuildTargetIcons: []
+  m_BuildTargetPlatformIcons: []
+  m_BuildTargetBatching: []
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: AndroidPlayer
+    m_APIs: 150000000b000000
+    m_Automatic: 0
+  m_BuildTargetVRSettings: []
+  m_DefaultShaderChunkSizeInMB: 16
+  m_DefaultShaderChunkCount: 0
+  openGLRequireES31: 0
+  openGLRequireES31AEP: 0
+  openGLRequireES32: 0
+  m_TemplateCustomTags: {}
+  mobileMTRendering:
+    Android: 1
+    iPhone: 1
+    tvOS: 1
+  m_BuildTargetGroupLightmapEncodingQuality: []
+  m_BuildTargetGroupHDRCubemapEncodingQuality: []
+  m_BuildTargetGroupLoadStoreControlSupport: []
+  playModeTestRunnerEnabled: 0
+  actionOnDotNetUnhandledException: 1
+  enableInternalProfiler: 0
+  logObjCUncaughtExceptions: 1
+  enableCrashReportAPI: 0
+  cameraUsageDescription:
+  locationUsageDescription:
+  microphoneUsageDescription:
+  bluetoothUsageDescription:
+  macOSTargetOSVersion: 10.13.0
+  tvOSSdkVersion: 0
+  tvOSTargetOSVersion: 12.0
+  tvOSRequireExtendedGameController: 0
+  iPhoneSdkVersion: 988
+  iOSTargetOSVersion: 13.0
+  uIPrerenderedIcon: 0
+  uIRequiresPersistentWiFi: 0
+  uIRequiresFullScreen: 1
+  uIStatusBarHidden: 1
+  uIExitOnSuspend: 0
+  uIStatusBarStyle: 0
+  iPhoneSplashScreen: {fileID: 0}
+  iPhoneHighResSplashScreen: {fileID: 0}
+  iPhoneTallHighResSplashScreen: {fileID: 0}
+  iPhone47inchSplashScreen: {fileID: 0}
+  iPhone55inchSplashScreen: {fileID: 0}
+  iPhone58inchSplashScreen: {fileID: 0}
+  iPhone65inchSplashScreen: {fileID: 0}
+  ipodTouchSplashScreen: {fileID: 0}
+  iPadPortraitSplashScreen: {fileID: 0}
+  iPadHighResPortraitSplashScreen: {fileID: 0}
+  iPadLandscapeSplashScreen: {fileID: 0}
+  iPadHighResLandscapeSplashScreen: {fileID: 0}
+  appleTVSplashScreen: {fileID: 0}
+  appleTVSplashScreen2x: {fileID: 0}
+  tvOSSmallIconLayers: []
+  tvOSSmallIconLayersImporter: {fileID: 0}
+  tvOSLargeIconLayers: []
+  tvOSLargeIconLayersImporter: {fileID: 0}
+  tvOSTopShelfImageLayers: []
+  tvOSTopShelfImageLayersImporter: {fileID: 0}
+  tvOSTopShelfImageWideLayers: []
+  tvOSTopShelfImageWideLayersImporter: {fileID: 0}
+  iOSLaunchScreenType: 0
+  iOSLaunchScreenPortrait: {fileID: 0}
+  iOSLaunchScreenLandscape: {fileID: 0}
+  iOSLaunchScreenBackgroundColor:
+    serializedVersion: 2
+    rgba: 0
+  iOSLaunchScreenFillPct: 100
+  iOSLaunchScreenSize: 100
+  iOSLaunchScreenCustomXibPath:
+  iOSLaunchScreeniPadType: 0
+  iOSLaunchScreeniPadImage: {fileID: 0}
+  iOSLaunchScreeniPadBackgroundColor:
+    serializedVersion: 2
+    rgba: 0
+  iOSLaunchScreeniPadFillPct: 100
+  iOSLaunchScreeniPadSize: 100
+  iOSLaunchScreeniPadCustomXibPath:
+  iOSUseLaunchScreenStoryboard: 0
+  iOSLaunchScreenCustomStoryboardPath:
+  iOSDeviceRequirements: []
+  iOSURLSchemes: []
+  iOSBackgroundModes: 0
+  iOSMetalForceHardShadows: 0
+  metalEditorSupport: 1
+  metalAPIValidation: 1
+  iOSRenderExtraFrameOnPause: 0
+  iOSAppInBackgroundBehavior: 0
+  iOSExtensionProjectPath:
+  iOSExtensionTargetPlatforms: 0
+  appleEnableAutomaticSigning: 0
+  appleAutomaticSigningTeamID:
+  appleAnisotropicFiltering: 1
+  iOSManualProvisioningProfileID:
+  iOSManualProvisioningProfileType: 0
+  tvOSManualProvisioningProfileID:
+  tvOSManualProvisioningProfileType: 0
+  iOSSharedClipboardUsage: 0
+  appleEnableProMotion: 0
+  shaderPrecisionModel: 0
+  clonedPlayback: 0
+  targetArchitectures: 1
+  targetOculusDevices: 0
+  selectedPlatform: 13
+  vcoDeferScript: 1
+  allowedAutorotateToPortrait: 1
+  allowedAutorotateToPortraitUpsideDown: 0
+  m_WebGLMemorySize: 32
+  m_WebGLExceptionSupport: 1
+  m_WebGLNameFilesAsHashes: 0
+  m_WebGLDataCaching: 1
+  m_WebGLDebugSymbols: 0
+  m_WebGLEmscriptenArgs:
+  m_WebGLModulesDirectory:
+  m_WebGLTemplate: APPLICATION:Default
+  m_WebGLAnalyzeBuildSize: 0
+  m_WebGLUseEmbeddedResources: 0
+  m_WebGLCompressionFormat: 1
+  m_WebGLWasmArithmetic: 0
+  m_WiiUSaveBoolean: 0
+  m_WiiUSavePath:
+  m_WiiUTVStartMode: 0
+  m_WiiUGamePadStartMode: 1
+  m_WiiUControllerCount: 0
+  m_WiiUGamePadMSAA: 1
+  m_WiiUDRCRotation: 0
+  m_WiiUHardCodes: 0
+  m_SwitchApplicationID: 0x01004b9000490000
+  m_SwitchNSODependencies: 0
+  m_SwitchTitleNames_0:
+  m_SwitchTitleNames_1:
+  m_SwitchTitleNames_2:
+  m_SwitchTitleNames_3:
+  m_SwitchTitleNames_4:
+  m_SwitchTitleNames_5:
+  m_SwitchTitleNames_6:
+  m_SwitchTitleNames_7:
+  m_SwitchTitleNames_8:
+  m_SwitchTitleNames_9:
+  m_SwitchTitleNames_10:
+  m_SwitchTitleNames_11:
+  m_SwitchTitleNames_12:
+  m_SwitchTitleNames_13:
+  m_SwitchTitleNames_14:
+  m_SwitchPublisherName:
+  m_SwitchSaveDataSize: 0
+  m_SwitchJournalSize: 0
+  m_SwitchApplicationErrorCodeCategory:
+  m_SwitchUserAccountSaveDataSize: 0
+  m_SwitchUserAccountSaveDataJournalSize: 0
+  m_SwitchApplicationAttribute: 0
+  m_SwitchCardSpecSize: -1
+  m_SwitchCardSpecClock: -1
+  m_SwitchRatingsMappings: []
+  m_SwitchRatingsSystemName: 0
+  m_SwitchLocalCommunicationIds:
+  - 0x0000000000000000
+  m_SwitchParentalControl: 0
+  m_SwitchAllowsScreenshot: 1
+  m_SwitchAllowsVideoCapturing: 1
+  m_SwitchAllowsRuntimeAddOnContentInstall: 0
+  m_SwitchDataLossConfirmation: 0
+  m_SwitchUserAccountLockEnabled: 0
+  m_SwitchSystemResourceMemory: 16777216
+  m_SwitchSupportedLanguagesMask: 65535
+  m_SwitchLogoHandling: 0
+  m_SwitchReleaseVersion: 0
+  m_SwitchDisplayVersion: 1.0.0
+  m_SwitchStartupUserAccount: 0
+  m_SwitchSupportedNpadStyles: 22
+  m_SwitchNativeFsCacheSize: 32
+  m_SwitchIsHoldTypeHorizontal: 0
+  m_SwitchSupportedNpadCount: 8
+  m_SwitchSocketConfigEnabled: 0
+  m_SwitchTcpInitialSendBufferSize: 32
+  m_SwitchTcpInitialReceiveBufferSize: 64
+  m_SwitchTcpAutoSendBufferSizeMax: 256
+  m_SwitchTcpAutoReceiveBufferSizeMax: 256
+  m_SwitchUdpSendBufferSize: 9
+  m_SwitchUdpReceiveBufferSize: 42
+  m_SwitchSocketBufferEfficiency: 4
+  m_SwitchSocketInitializeEnabled: 1
+  m_SwitchNetworkInterfaceManagerInitializeEnabled: 1
+  m_SwitchPlayerConnectionEnabled: 1
+  m_SwitchUseLegacyNetworkingSocketApi: 1
+  m_SwitchGUID: 00000000000000000000000000000000
+  m_SwitchIsUnderNDA: 0
+  m_PS4NPAgeRatingApprovalRequired: 0
+  m_PS4ApplicationParam1: 0
+  m_PS4ApplicationParam2: 0
+  m_PS4ApplicationParam3: 0
+  m_PS4ApplicationParam4: 0
+  m_PS4DownloadDataSize: 0
+  m_PS4GarlicHeapSize: 2048
+  m_PS4ProGarlicHeapSize: 2560
+  m_PS4Passcode: 00000000000000000000000000000000
+  m_PS4BackgroundImagePath:
+  m_PS4StartMode: 0
+  m_PS4ErrorCategories: 0
+  m_PS4PatchPkgPath:
+  m_PS4PatchLatestPkgPath:
+  m_PS4PatchChangeinfoPath:
+  m_PS4PatchDayOne: 0
+  m_PS4ContentSearchFeaturesUsed: 0
+  m_PS4ExtraSceSysFile: {fileID: 0}
+  m_PS4SpecialVram: 0
+  m_PS4GPU800MHz: 1
+  m_PS4PronunciationXMLPath:
+  m_PS4PronunciationSIGPath:
+  m_PS4BackgroundMusicPath:
+  m_PS4StartupImagePath:
+  m_PS4StartupImagesFolder:
+  m_PS4IconImagesFolder:
+  m_PS4SaveDataImagePath:
+  m_PS4SdkOverride:
+  m_PS4includedModules: []
+  m_PS4VideoOutPixelFormat: 0
+  m_PS4VideoOutInitialWidth: 1920
+  m_PS4VideoOutBaseModeInitialWidth: 1920
+  m_PS4VideoOutReprojectionRate: 60
+  m_PS4PronunciationXMLFilePath:
+  m_PS4PronunciationSIGFilePath:
+  m_PS4NPTitleSecret:
+  m_PS4NPTitleID:
+  m_PS4ParentalLevel: 1
+  m_PS4DisableAutoHideSplashScreen: 0
+  m_PS4VideoRecordingFeaturesUsed: 0
+  m_PS4CompatibilityPS5: 0
+  m_PS4AllowPS5Detection: 0
+  m_PS4GPU900MHzModeEnabled: 0
+  m_PS4RemotePlayKeyAssignment: -1
+  m_PS4RemotePlaySeqs: []
+  m_PS4FramePadding: 1
+  m_PS4SubscribeEventMemory: 16384
+  m_PS4BronzeAge: 0
+  m_PS4Title: Pita Runner
+  m_PS4MetaDataPath:
+  m_PS4PrivacyGuardPath:
+  m_PS4PrivacyGuardLocalizedPath:
+  m_PS4PrivacyGuardVersion:
+  monoOptimizationFlags:
+  webPlayerTemplate: APPLICATION:Default
+  m_TemplateCustomTags: {}
