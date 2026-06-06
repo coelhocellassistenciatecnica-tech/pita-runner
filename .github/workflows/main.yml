@@ -31,5 +31,6 @@ jobs:
         with:
           targetPlatform: Android
           unityVersion: 6000.0.23f1
-          androidAppBundle: false
+
           androidExportType: 'androidPackage'
+          androidAppBundle: false # Removido para evitar warning, mas mantido para referência se necessário.
