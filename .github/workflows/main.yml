@@ -1,4 +1,4 @@
-name: Build project
+name: Unity Build
 
 on:
   push:
@@ -7,20 +7,13 @@ on:
 
 jobs:
   build:
-    name: Build for Android 📱
+    name: Build for Android
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           lfs: true
-
-      - uses: actions/cache@v4
-        with:
-          path: Library
-          key: Library-Android
-          restore-keys: |
-            Library-
 
       - name: Generate Activation File
         uses: game-ci/unity-request-activation-file@v2
@@ -33,7 +26,7 @@ jobs:
           path: ${{ steps.get-alf.outputs.filePath }}
 
       - name: Build project
-        if: env.UNITY_LICENSE != ''
+        if: secrets.UNITY_LICENSE != ''
         uses: game-ci/unity-builder@v4
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -42,6 +35,4 @@ jobs:
         with:
           targetPlatform: Android
           unityVersion: 6000.0.23f1
-          androidAppBundle: false
           androidExportType: 'androidPackage'
-          androidAppBundle: false # Removido para evitar warning, mas mantido para referência se necessário.
