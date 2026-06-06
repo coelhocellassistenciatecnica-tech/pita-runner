@@ -10,12 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Request activation file
-        uses: game-ci/unity-builder@v4
-        with:
-          unityVersion: 6000.0.23f1
-          versioning: None
-          buildMethod: GameCI.Editor.Build.ManualActivation.WriteAlf
-          customParameters: -logfile /dev/stdout
+        uses: game-ci/unity-request-activation-file@v2
+        # A versão v2 deveria funcionar, vou tentar sem parâmetros extras
       - uses: actions/upload-artifact@v4
         with:
           name: activation-file
